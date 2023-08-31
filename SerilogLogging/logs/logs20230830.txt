@@ -1,0 +1,229 @@
+2023-08-30 11:24:38.816 +05:30 [DBG] Hosting starting
+2023-08-30 11:24:38.968 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-30 11:24:39.098 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: EA06D5823F68D65B5844CF5942B77BEA2A834829)
+2023-08-30 11:24:39.164 +05:30 [INF] Now listening on: https://localhost:7296
+2023-08-30 11:24:39.165 +05:30 [INF] Now listening on: http://localhost:5152
+2023-08-30 11:24:39.166 +05:30 [DBG] Loaded hosting startup assembly SerilogLogging
+2023-08-30 11:24:39.167 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-30 11:24:39.168 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-30 11:24:39.169 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-30 11:24:39.170 +05:30 [INF] Hosting environment: Development
+2023-08-30 11:24:39.170 +05:30 [INF] Content root path: C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging
+2023-08-30 11:24:39.171 +05:30 [DBG] Hosting started
+2023-08-30 11:24:39.208 +05:30 [DBG] Connection id "0HMT93MCIQCBQ" received FIN.
+2023-08-30 11:24:39.215 +05:30 [DBG] Connection id "0HMT93MCIQCBQ" accepted.
+2023-08-30 11:24:39.217 +05:30 [DBG] Connection id "0HMT93MCIQCBQ" started.
+2023-08-30 11:24:39.231 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-30 11:24:39.261 +05:30 [DBG] Connection id "0HMT93MCIQCBQ" stopped.
+2023-08-30 11:24:39.264 +05:30 [DBG] Connection id "0HMT93MCIQCBQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-30 11:24:39.538 +05:30 [DBG] Connection id "0HMT93MCIQCBR" accepted.
+2023-08-30 11:24:39.540 +05:30 [DBG] Connection id "0HMT93MCIQCBR" started.
+2023-08-30 11:24:39.572 +05:30 [DBG] Connection 0HMT93MCIQCBR established using the following protocol: "Tls12"
+2023-08-30 11:24:39.612 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7296/ - -
+2023-08-30 11:24:39.640 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-30 11:24:39.644 +05:30 [DBG] The request path / does not match a supported file type
+2023-08-30 11:24:39.658 +05:30 [DBG] No candidates found for the request path '/'
+2023-08-30 11:24:39.659 +05:30 [DBG] Request did not match any endpoints
+2023-08-30 11:24:39.663 +05:30 [INF] HTTP GET / responded 404 in 18.8208 ms
+2023-08-30 11:24:39.677 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7296/ - - - 404 0 - 67.3364ms
+2023-08-30 11:24:45.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7296/api/calculator/add/2/3 - -
+2023-08-30 11:24:45.481 +05:30 [DBG] The request path /api/calculator/add/2/3 does not match a supported file type
+2023-08-30 11:24:45.492 +05:30 [DBG] 1 candidate(s) found for the request path '/api/calculator/add/2/3'
+2023-08-30 11:24:45.498 +05:30 [DBG] Endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)' with route pattern 'api/Calculator/add/{a}/{b}' is valid for the request path '/api/calculator/add/2/3'
+2023-08-30 11:24:45.502 +05:30 [DBG] Request matched endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 11:24:45.504 +05:30 [INF] Executing endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 11:24:45.539 +05:30 [INF] Route matched with {action = "Add", controller = "Calculator"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Double, Double) on controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging).
+2023-08-30 11:24:45.542 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-30 11:24:45.545 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-30 11:24:45.547 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-30 11:24:45.549 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-30 11:24:45.550 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-30 11:24:45.552 +05:30 [DBG] Executing controller factory for controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging)
+2023-08-30 11:24:45.554 +05:30 [DBG] Executed controller factory for controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging)
+2023-08-30 11:24:45.564 +05:30 [DBG] Attempting to bind parameter 'a' of type 'System.Double' ...
+2023-08-30 11:24:45.566 +05:30 [DBG] Attempting to bind parameter 'a' of type 'System.Double' using the name 'a' in request data ...
+2023-08-30 11:24:45.568 +05:30 [DBG] Done attempting to bind parameter 'a' of type 'System.Double'.
+2023-08-30 11:24:45.569 +05:30 [DBG] Done attempting to bind parameter 'a' of type 'System.Double'.
+2023-08-30 11:24:45.571 +05:30 [DBG] Attempting to validate the bound parameter 'a' of type 'System.Double' ...
+2023-08-30 11:24:45.573 +05:30 [DBG] Done attempting to validate the bound parameter 'a' of type 'System.Double'.
+2023-08-30 11:24:45.576 +05:30 [DBG] Attempting to bind parameter 'b' of type 'System.Double' ...
+2023-08-30 11:24:45.577 +05:30 [DBG] Attempting to bind parameter 'b' of type 'System.Double' using the name 'b' in request data ...
+2023-08-30 11:24:45.578 +05:30 [DBG] Done attempting to bind parameter 'b' of type 'System.Double'.
+2023-08-30 11:24:45.579 +05:30 [DBG] Done attempting to bind parameter 'b' of type 'System.Double'.
+2023-08-30 11:24:45.580 +05:30 [DBG] Attempting to validate the bound parameter 'b' of type 'System.Double' ...
+2023-08-30 11:24:45.582 +05:30 [DBG] Done attempting to validate the bound parameter 'b' of type 'System.Double'.
+2023-08-30 11:24:45.584 +05:30 [DBG] Adding 2 and 3
+2023-08-30 11:24:45.588 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-30 11:24:45.594 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-08-30 11:24:45.595 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-30 11:24:45.596 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-30 11:24:45.597 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-30 11:24:45.598 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2023-08-30 11:24:45.618 +05:30 [INF] Executed action SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging) in 63.1458ms
+2023-08-30 11:24:45.621 +05:30 [INF] Executed endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 11:24:45.623 +05:30 [INF] HTTP GET /api/calculator/add/2/3 responded 200 in 142.1081 ms
+2023-08-30 11:24:45.627 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7296/api/calculator/add/2/3 - - - 200 - application/json;+charset=utf-8 147.5806ms
+2023-08-30 16:34:55.370 +05:30 [DBG] Hosting starting
+2023-08-30 16:34:55.521 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-30 16:34:55.692 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: EA06D5823F68D65B5844CF5942B77BEA2A834829)
+2023-08-30 16:34:55.727 +05:30 [INF] Now listening on: https://localhost:7296
+2023-08-30 16:34:55.729 +05:30 [INF] Now listening on: http://localhost:5152
+2023-08-30 16:34:55.730 +05:30 [DBG] Loaded hosting startup assembly SerilogLogging
+2023-08-30 16:34:55.731 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-30 16:34:55.732 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-30 16:34:55.733 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-30 16:34:55.734 +05:30 [INF] Hosting environment: Development
+2023-08-30 16:34:55.735 +05:30 [INF] Content root path: C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging
+2023-08-30 16:34:55.736 +05:30 [DBG] Hosting started
+2023-08-30 16:34:56.066 +05:30 [DBG] Connection id "0HMT993OR0RE6" received FIN.
+2023-08-30 16:34:56.066 +05:30 [DBG] Connection id "0HMT993OR0RE7" received FIN.
+2023-08-30 16:34:56.074 +05:30 [DBG] Connection id "0HMT993OR0RE6" accepted.
+2023-08-30 16:34:56.074 +05:30 [DBG] Connection id "0HMT993OR0RE7" accepted.
+2023-08-30 16:34:56.077 +05:30 [DBG] Connection id "0HMT993OR0RE6" started.
+2023-08-30 16:34:56.078 +05:30 [DBG] Connection id "0HMT993OR0RE7" started.
+2023-08-30 16:34:56.093 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-30 16:34:56.093 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-30 16:34:56.130 +05:30 [DBG] Connection id "0HMT993OR0RE6" stopped.
+2023-08-30 16:34:56.130 +05:30 [DBG] Connection id "0HMT993OR0RE7" stopped.
+2023-08-30 16:34:56.134 +05:30 [DBG] Connection id "0HMT993OR0RE6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-30 16:34:56.134 +05:30 [DBG] Connection id "0HMT993OR0RE7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-30 16:34:56.399 +05:30 [DBG] Connection id "0HMT993OR0RE8" accepted.
+2023-08-30 16:34:56.400 +05:30 [DBG] Connection id "0HMT993OR0RE8" started.
+2023-08-30 16:34:56.435 +05:30 [DBG] Connection 0HMT993OR0RE8 established using the following protocol: "Tls12"
+2023-08-30 16:34:56.480 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7296/ - -
+2023-08-30 16:34:56.510 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-30 16:34:56.514 +05:30 [DBG] The request path / does not match a supported file type
+2023-08-30 16:34:56.528 +05:30 [DBG] No candidates found for the request path '/'
+2023-08-30 16:34:56.530 +05:30 [DBG] Request did not match any endpoints
+2023-08-30 16:34:56.534 +05:30 [INF] HTTP GET / responded 404 in 18.8418 ms
+2023-08-30 16:34:56.548 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7296/ - - - 404 0 - 72.1076ms
+2023-08-30 16:35:02.882 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7296/api/calculator/add/2/3 - -
+2023-08-30 16:35:02.883 +05:30 [DBG] The request path /api/calculator/add/2/3 does not match a supported file type
+2023-08-30 16:35:02.898 +05:30 [DBG] 1 candidate(s) found for the request path '/api/calculator/add/2/3'
+2023-08-30 16:35:02.905 +05:30 [DBG] Endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)' with route pattern 'api/Calculator/add/{a}/{b}' is valid for the request path '/api/calculator/add/2/3'
+2023-08-30 16:35:02.907 +05:30 [DBG] Request matched endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 16:35:02.910 +05:30 [INF] Executing endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 16:35:02.960 +05:30 [INF] Route matched with {action = "Add", controller = "Calculator"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Double, Double) on controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging).
+2023-08-30 16:35:02.966 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-30 16:35:02.967 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-30 16:35:02.970 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-30 16:35:02.974 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-30 16:35:02.976 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-30 16:35:02.978 +05:30 [DBG] Executing controller factory for controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging)
+2023-08-30 16:35:02.981 +05:30 [DBG] Executed controller factory for controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging)
+2023-08-30 16:35:02.994 +05:30 [DBG] Attempting to bind parameter 'a' of type 'System.Double' ...
+2023-08-30 16:35:02.997 +05:30 [DBG] Attempting to bind parameter 'a' of type 'System.Double' using the name 'a' in request data ...
+2023-08-30 16:35:03.000 +05:30 [DBG] Done attempting to bind parameter 'a' of type 'System.Double'.
+2023-08-30 16:35:03.001 +05:30 [DBG] Done attempting to bind parameter 'a' of type 'System.Double'.
+2023-08-30 16:35:03.002 +05:30 [DBG] Attempting to validate the bound parameter 'a' of type 'System.Double' ...
+2023-08-30 16:35:03.005 +05:30 [DBG] Done attempting to validate the bound parameter 'a' of type 'System.Double'.
+2023-08-30 16:35:03.009 +05:30 [DBG] Attempting to bind parameter 'b' of type 'System.Double' ...
+2023-08-30 16:35:03.010 +05:30 [DBG] Attempting to bind parameter 'b' of type 'System.Double' using the name 'b' in request data ...
+2023-08-30 16:35:03.011 +05:30 [DBG] Done attempting to bind parameter 'b' of type 'System.Double'.
+2023-08-30 16:35:03.012 +05:30 [DBG] Done attempting to bind parameter 'b' of type 'System.Double'.
+2023-08-30 16:35:03.014 +05:30 [DBG] Attempting to validate the bound parameter 'b' of type 'System.Double' ...
+2023-08-30 16:35:03.015 +05:30 [DBG] Done attempting to validate the bound parameter 'b' of type 'System.Double'.
+2023-08-30 16:35:03.017 +05:30 [DBG] Adding 2 and 3
+2023-08-30 16:35:03.023 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-30 16:35:03.028 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-08-30 16:35:03.029 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-30 16:35:03.030 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-30 16:35:03.031 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-30 16:35:03.033 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2023-08-30 16:35:03.070 +05:30 [INF] Executed action SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging) in 85.6414ms
+2023-08-30 16:35:03.073 +05:30 [INF] Executed endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 16:35:03.076 +05:30 [INF] HTTP GET /api/calculator/add/2/3 responded 200 in 192.1895 ms
+2023-08-30 16:35:03.082 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7296/api/calculator/add/2/3 - - - 200 - application/json;+charset=utf-8 200.3346ms
+2023-08-30 16:49:49.301 +05:30 [DBG] Hosting starting
+2023-08-30 16:49:49.464 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-30 16:49:49.595 +05:30 [DBG] Using development certificate: CN=localhost (Thumbprint: EA06D5823F68D65B5844CF5942B77BEA2A834829)
+2023-08-30 16:49:49.653 +05:30 [INF] Now listening on: https://localhost:7296
+2023-08-30 16:49:49.655 +05:30 [INF] Now listening on: http://localhost:5152
+2023-08-30 16:49:49.658 +05:30 [DBG] Loaded hosting startup assembly SerilogLogging
+2023-08-30 16:49:49.660 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-30 16:49:49.661 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-08-30 16:49:49.662 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-30 16:49:49.663 +05:30 [INF] Hosting environment: Development
+2023-08-30 16:49:49.664 +05:30 [INF] Content root path: C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging
+2023-08-30 16:49:49.664 +05:30 [DBG] Hosting started
+2023-08-30 16:49:49.668 +05:30 [DBG] Connection id "0HMT99C351MLJ" accepted.
+2023-08-30 16:49:49.670 +05:30 [DBG] Connection id "0HMT99C351MLJ" started.
+2023-08-30 16:49:49.672 +05:30 [DBG] Connection id "0HMT99C351MLK" accepted.
+2023-08-30 16:49:49.673 +05:30 [DBG] Connection id "0HMT99C351MLK" started.
+2023-08-30 16:49:49.704 +05:30 [DBG] Connection id "0HMT99C351MLJ" received FIN.
+2023-08-30 16:49:49.704 +05:30 [DBG] Connection id "0HMT99C351MLK" received FIN.
+2023-08-30 16:49:49.716 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-30 16:49:49.716 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-08-30 16:49:49.746 +05:30 [DBG] Connection id "0HMT99C351MLK" stopped.
+2023-08-30 16:49:49.746 +05:30 [DBG] Connection id "0HMT99C351MLJ" stopped.
+2023-08-30 16:49:49.748 +05:30 [DBG] Connection id "0HMT99C351MLK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-30 16:49:49.748 +05:30 [DBG] Connection id "0HMT99C351MLJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-30 16:49:50.018 +05:30 [DBG] Connection id "0HMT99C351MLL" accepted.
+2023-08-30 16:49:50.021 +05:30 [DBG] Connection id "0HMT99C351MLL" started.
+2023-08-30 16:49:50.051 +05:30 [DBG] Connection 0HMT99C351MLL established using the following protocol: "Tls12"
+2023-08-30 16:49:50.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7296/ - -
+2023-08-30 16:49:50.130 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-08-30 16:49:50.134 +05:30 [DBG] The request path / does not match a supported file type
+2023-08-30 16:49:50.150 +05:30 [DBG] No candidates found for the request path '/'
+2023-08-30 16:49:50.153 +05:30 [DBG] Request did not match any endpoints
+2023-08-30 16:49:50.160 +05:30 [INF] HTTP GET / responded 404 in 24.9463 ms
+2023-08-30 16:49:50.174 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7296/ - - - 404 0 - 89.5703ms
+2023-08-30 16:49:54.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7296/api/calculator/add/2/3 - -
+2023-08-30 16:49:54.123 +05:30 [DBG] The request path /api/calculator/add/2/3 does not match a supported file type
+2023-08-30 16:49:54.134 +05:30 [DBG] 1 candidate(s) found for the request path '/api/calculator/add/2/3'
+2023-08-30 16:49:54.140 +05:30 [DBG] Endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)' with route pattern 'api/Calculator/add/{a}/{b}' is valid for the request path '/api/calculator/add/2/3'
+2023-08-30 16:49:54.142 +05:30 [DBG] Request matched endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 16:49:54.144 +05:30 [INF] Executing endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 16:49:54.180 +05:30 [INF] Route matched with {action = "Add", controller = "Calculator"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Double, Double) on controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging).
+2023-08-30 16:49:54.184 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-08-30 16:49:54.185 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-08-30 16:49:54.187 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-08-30 16:49:54.189 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-08-30 16:49:54.190 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-08-30 16:49:54.192 +05:30 [DBG] Executing controller factory for controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging)
+2023-08-30 16:49:54.193 +05:30 [DBG] Executed controller factory for controller SerilogLoggingApp.Controllers.CalculatorController (SerilogLogging)
+2023-08-30 16:49:54.204 +05:30 [DBG] Attempting to bind parameter 'a' of type 'System.Double' ...
+2023-08-30 16:49:54.207 +05:30 [DBG] Attempting to bind parameter 'a' of type 'System.Double' using the name 'a' in request data ...
+2023-08-30 16:49:54.209 +05:30 [DBG] Done attempting to bind parameter 'a' of type 'System.Double'.
+2023-08-30 16:49:54.210 +05:30 [DBG] Done attempting to bind parameter 'a' of type 'System.Double'.
+2023-08-30 16:49:54.213 +05:30 [DBG] Attempting to validate the bound parameter 'a' of type 'System.Double' ...
+2023-08-30 16:49:54.216 +05:30 [DBG] Done attempting to validate the bound parameter 'a' of type 'System.Double'.
+2023-08-30 16:49:54.218 +05:30 [DBG] Attempting to bind parameter 'b' of type 'System.Double' ...
+2023-08-30 16:49:54.219 +05:30 [DBG] Attempting to bind parameter 'b' of type 'System.Double' using the name 'b' in request data ...
+2023-08-30 16:49:54.220 +05:30 [DBG] Done attempting to bind parameter 'b' of type 'System.Double'.
+2023-08-30 16:49:54.222 +05:30 [DBG] Done attempting to bind parameter 'b' of type 'System.Double'.
+2023-08-30 16:49:54.223 +05:30 [DBG] Attempting to validate the bound parameter 'b' of type 'System.Double' ...
+2023-08-30 16:49:54.224 +05:30 [DBG] Done attempting to validate the bound parameter 'b' of type 'System.Double'.
+2023-08-30 16:49:54.226 +05:30 [DBG] Adding 2 and 3
+2023-08-30 16:49:54.230 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-08-30 16:49:54.235 +05:30 [DBG] No information found on request to perform content negotiation.
+2023-08-30 16:49:54.235 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-08-30 16:49:54.236 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-08-30 16:49:54.237 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-08-30 16:49:54.238 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2023-08-30 16:49:54.260 +05:30 [INF] Executed action SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging) in 64.9009ms
+2023-08-30 16:49:54.262 +05:30 [INF] Executed endpoint 'SerilogLoggingApp.Controllers.CalculatorController.Add (SerilogLogging)'
+2023-08-30 16:49:54.264 +05:30 [INF] HTTP GET /api/calculator/add/2/3 responded 200 in 140.8995 ms
+2023-08-30 16:49:54.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7296/api/calculator/add/2/3 - - - 200 - application/json;+charset=utf-8 146.7494ms

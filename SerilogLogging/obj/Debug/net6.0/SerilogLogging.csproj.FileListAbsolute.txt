@@ -53,3 +53,4 @@ C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging\bin\Debug\net6.0
 C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging\obj\Debug\net6.0\SerilogLogging.csproj.CopyComplete
+C:\Users\X6SSINH2\source\repos\SerilogLoggingApp\SerilogLogging\bin\Debug\net6.0\Serilog.Sinks.File.Header.dll
